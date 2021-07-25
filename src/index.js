@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Controller from './Controller';
 import * as serviceWorker from './serviceWorker';
+import Controller from './screens/Controller.js';
 
-ReactDOM.render(
-    <div>
-        <Controller/>
-    </div>,
-    document.getElementById('root')
+
+ReactDOM.render(<Controller/>,document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

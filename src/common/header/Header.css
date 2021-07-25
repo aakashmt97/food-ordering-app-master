@@ -4,7 +4,6 @@
     justify-content: space-between;
     background-color: rgb(37, 50, 56);
     padding: 10px;
-    height: 2.8em;
 }
 
 .icon-product {
@@ -23,14 +22,51 @@
     }
 }
 
-.profileButton {
-    color: "#c2c2c2";
-    text-transform: "none";
-    font-weight: 400;
-    padding: 8px 8px 8px 8px;
+#logo-search {
+    height: 27px;
+    padding: 0px 0px 0px 10px;
 }
 
-.loginButton {
-    font-weight: 400;
-    margin: 8px 8px 8px 8px;
+.head-login {
+    padding-right: 10px;
+}
+
+.logo-profile {
+    padding-right: 10px;
+}
+
+.dispNone {
+    display: none;
+}
+
+.search-header {
+    display: flex;
+    align-self: flex-start;
+    height: 40px;
+    align-items: center;
+    width: 300px;
+}
+
+.red {
+    color: red;
+}
+
+.login-panel {
+    margin-bottom: 20px;
+}
+
+#list-profile {
+    padding: 0px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.dispBlock {
+    display: block;
+}
+
+#list-profile {
+    padding: 0px;
+    margin-left: 20px;
+    margin-top: 30px;
 }
