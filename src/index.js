@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Controller from './Controller';
 import * as serviceWorker from './serviceWorker';
+import Controller from './screens/Controller.js';
+
+
+
+ReactDOM.render(<Controller/>,document.getElementById('root')
 
 // import { BrowserRouter as Router } from "react-router-dom";
 // import Controller from './screens/Controller';
@@ -18,6 +22,7 @@ ReactDOM.render(
 
     </div>,
     document.getElementById('root')
+
 );
 
 // If you want your app to work offline and load faster, you can change
