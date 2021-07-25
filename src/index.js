@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Controller from './Controller';
 import * as serviceWorker from './serviceWorker';
 
 // import { BrowserRouter as Router } from "react-router-dom";
@@ -10,7 +11,11 @@ import Home from './screens/home/Home';
 
 ReactDOM.render(
     <div>
+
       <Home/>
+
+        <Controller/>
+
     </div>,
     document.getElementById('root')
 );
