@@ -1,0 +1,36 @@
+.product-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(37, 50, 56);
+    padding: 10px;
+    height: 2.8em;
+}
+
+.icon-product {
+    align-self: center;
+    padding-left: 10px;
+}
+
+@media screen and (max-width:600px) {
+    .product-head {
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .icon-product {
+        align-self: flex-start;
+    }
+}
+
+.profileButton {
+    color: "#c2c2c2";
+    text-transform: "none";
+    font-weight: 400;
+    padding: 8px 8px 8px 8px;
+}
+
+.loginButton {
+    font-weight: 400;
+    margin: 8px 8px 8px 8px;
+}
