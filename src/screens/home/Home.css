@@ -1,0 +1,48 @@
+/* .restaurant-rating-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e1ad01;
+	width: 45%;
+	color: white;
+	padding: 5px;
+}
+
+.rating-and-avg-div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.restaurant-categories-div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+} */
+
+
+/* Set Css Styles For Home Section */
+
+.restaurant-rating-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e1ad01;
+	width: 45%;
+	color: white;
+	padding: 5px;
+}
+
+.rating-and-avg-div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.restaurant-categories-div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.inr-style{
+	margin-right: -5px;
+}
