@@ -4,9 +4,18 @@ import './index.css';
 import Controller from './Controller';
 import * as serviceWorker from './serviceWorker';
 
+// import { BrowserRouter as Router } from "react-router-dom";
+// import Controller from './screens/Controller';
+
+import Home from './screens/home/Home';
+
 ReactDOM.render(
     <div>
+
+      <Home/>
+
         <Controller/>
+
     </div>,
     document.getElementById('root')
 );
