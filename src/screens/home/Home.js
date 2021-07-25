@@ -44,6 +44,50 @@ const styles = theme => ({
 //Home Section UI
 class Home extends Component {
 
+    constructor() {
+        super();
+        this.state = {
+            restaurants: [],
+            cards: null,
+            loading: false
+        }
+    }
+
+    componentDidMount() {
+        this.mounted = true;
+        this.getRestaurants();
+        this.noOfColumns();
+        //when the window is resized calls the noOfColumns method
+        window.addEventListener('resize', this.noOfColumns);
+    }
+
+    //called before render()
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.noOfColumns);
+    }
+
+    //fetches the restaurants from backend
+    getRestaurants = () => {
+        let that = this;
+        let restaurantsData = null;
+        let xhrRestaurants = new XMLHttpRequest();
+        xhrRestaurants.onload = this.setState({ loading: true })
+        xhrRestaurants.addEventListener('readystatechange', function () {
+            if (this.readyState === 4) {
+                that.setState({
+                    restaurants: JSON.parse(this.responseText).restaurants,
+                    loading: false
+                });
+            }
+        })
+
+        // let url = this.props.baseUrl + 'restaurant';
+        let url = 'http://localhost:8080/api/restaurant';
+        xhrRestaurants.open("GET", url);
+        xhrRestaurants.send(restaurantsData);
+    }
+
+
     //method updates the no columns according to the window size
     noOfColumns = () => {
 
