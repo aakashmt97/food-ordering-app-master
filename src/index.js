@@ -5,7 +5,24 @@ import * as serviceWorker from './serviceWorker';
 import Controller from './screens/Controller.js';
 
 
+
 ReactDOM.render(<Controller/>,document.getElementById('root')
+
+// import { BrowserRouter as Router } from "react-router-dom";
+// import Controller from './screens/Controller';
+
+import Home from './screens/home/Home';
+
+ReactDOM.render(
+    <div>
+
+      <Home/>
+
+        <Controller/>
+
+    </div>,
+    document.getElementById('root')
+
 );
 
 // If you want your app to work offline and load faster, you can change
