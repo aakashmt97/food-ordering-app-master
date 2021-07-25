@@ -197,7 +197,7 @@ class Home extends Component {
                                                                 {/* restaurant average price */}
                                                                 <div className="restaurant-avg-price-div">
                                                                     <Typography variant='body1'>
-                                                                        <i className="fa fa-inr" aria-hidden="true"></i>
+                                                                        <i className="fa fa-inr inr-style"></i>
                                                                         {restaurant.average_price} for two
                                                                     </Typography>
                                                                 </div>
